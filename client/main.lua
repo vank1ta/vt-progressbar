@@ -282,10 +282,10 @@ function ActionCleanup()
     runProgThread = false
 end
 
-function LoadAnimDict(dict)
+function loadAnimDict(dict)
 	while (not HasAnimDictLoaded(dict)) do
 		RequestAnimDict(dict)
-		Wait(5)
+		Citizen.Wait(5)
 	end
 end
 
